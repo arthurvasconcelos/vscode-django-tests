@@ -1,0 +1,53 @@
+{
+  "name": "vscode-django-tests",
+  "displayName": "django-tests-provider",
+  "description": "Django tests using VSCode's test explorer",
+  "packageManager": "yarn@3.6.1",
+  "version": "0.0.1",
+  "publisher": "Arthur Vasconcelos",
+  "author": {
+    "name": "Arthur Vasconcelos",
+    "url": "https://github.com/arthurvasconcelos"
+  },
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthurvasconcelos/vscode-django-tests"
+  },
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Other",
+    "Testing"
+  ],
+  "keywords": [
+    "django",
+    "debug",
+    "test"
+  ],
+  "activationEvents": [
+    "workspaceContains:*.py"
+  ],
+  "main": "./out/extension.js",
+  "icon": "images/vscode-django.png",
+  "extensionKind": [
+    "workspace"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.5.2",
+    "@types/vscode": "^1.92.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0"
+  }
+}
