@@ -18,6 +18,7 @@ env
 # DB dumps
 *.db
 *.dump
+*.sqlite3
 
 # YARN
 .yarn/*

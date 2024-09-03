@@ -28,13 +28,39 @@
     "test"
   ],
   "activationEvents": [
-    "workspaceContains:*.py"
+    "onLanguage:python",
+    "workspaceContains:manage.py",
+    "workspaceContains:**/test_*.py"
   ],
   "main": "./out/extension.js",
   "icon": "images/vscode-django.png",
   "extensionKind": [
     "workspace"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "br.com.arthurvasconcelos.django.start",
+        "title": "Arthur doing stuff",
+        "category": "Django Tests"
+      }
+    ],
+    "configuration": {
+      "title": "Django Tests",
+      "properties": {
+        "djangoTests.rootDir": {
+          "type": "string",
+          "default": "",
+          "description": "Django project root path"
+        },
+        "djangoTests.settingsModule": {
+          "type": "string",
+          "default": "",
+          "description": "Django project settings module's name"
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -49,5 +75,8 @@
     "eslint": "^9.9.1",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.3.0"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
   }
 }
