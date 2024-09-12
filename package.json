@@ -50,7 +50,7 @@
       "properties": {
         "djangoTests.rootDir": {
           "type": "string",
-          "default": "",
+          "default": "./",
           "description": "Django project root path"
         },
         "djangoTests.settingsModule": {

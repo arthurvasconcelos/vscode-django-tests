@@ -14,7 +14,7 @@ type ProcessRunConfiguration = {
   acceptedExitCodes?: readonly number[];
 };
 
-type Commands = "discovery.py";
+type Commands = "discovery.py" | "runner.py";
 
 type CommandOutput = {
   exitCode: number;

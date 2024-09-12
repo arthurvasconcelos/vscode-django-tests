@@ -150,8 +150,11 @@ def build_test_tree(
     directory_path = pathlib.PurePath(test_directory)
     root = build_test_node(test_directory, directory_path.name, TestNodeTypeEnum.folder)
 
+    # print(get_test_case(suite))
+
     for test_case in get_test_case(suite):
         test_id = test_case.id()
+        # print(test_id)
         components = test_id.split(".")
 
         if test_id.startswith("unittest.loader._FailedTest"):

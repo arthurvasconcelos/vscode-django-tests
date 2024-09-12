@@ -18,7 +18,7 @@
       "preLaunchTask": "npm: watch"
     },
     {
-      "name": "Run Extension (Local)",
+      "name": "LOCAL",
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",

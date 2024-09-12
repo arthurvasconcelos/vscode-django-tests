@@ -1,5 +1,12 @@
 import { EXTENSION_SETTINGS_NAME } from "./constants";
 
+export class NoContextError extends Error {
+  constructor() {
+    super("Context is unavailable");
+    this.name = "NoContextError";
+  }
+}
+
 export class MissingPeerDependencyError extends Error {
   constructor(dependency: string) {
     super(`VSCode ${dependency} extension is required`);

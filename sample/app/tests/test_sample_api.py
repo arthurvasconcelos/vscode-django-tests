@@ -15,4 +15,4 @@ class SampleViewsTest(APITestCase):
         response = self.client.get('/my_view')
 
         # Assert
-        self.assertEqual(response.data['response'], 'Hello')
+        self.assertEqual(response.data['response'], 'Heddddllo')
