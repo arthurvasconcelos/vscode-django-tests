@@ -21,7 +21,8 @@ pip install
 
 > [!NOTE]  
 > This repo took inspiration from other test runner plugins, thank you for all those creators.
-> https://github.com/Pachwenko/VSCode-Django-Test-Runner
-> https://github.com/panicofr/django-tester
-> https://github.com/jest-community/vscode-jest
-> https://github.com/microsoft/vscode-extension-samples/tree/main/test-provider-sample
+> 
+> - https://github.com/Pachwenko/VSCode-Django-Test-Runner
+> - https://github.com/panicofr/django-tester
+> - https://github.com/jest-community/vscode-jest
+> - https://github.com/microsoft/vscode-extension-samples/tree/main/test-provider-sample
